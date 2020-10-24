@@ -19,6 +19,18 @@ const routes: Routes = [
     path: 'tutorial-tres',
     loadChildren: () => import('./tutorial-tres/tutorial-tres.module').then( m => m.TutorialTresPageModule)
   },
+  {
+    path: 'objetivos',
+    loadChildren: () => import('./objetivos/objetivos.module').then( m => m.ObjetivosPageModule)
+  },
+  {
+    path: 'player',
+    loadChildren: () => import('./player/player.module').then( m => m.PlayerPageModule)
+  },
+  {
+    path: 'estatisticas',
+    loadChildren: () => import('./estatisticas/estatisticas.module').then( m => m.EstatisticasPageModule)
+  },
 ];
 
 @NgModule({
